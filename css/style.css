@@ -629,6 +629,22 @@ video {
   background-image: url('../images/logo-dark-mode.svg');
 }
 
+.bg-curvy-light-mode {
+  background-image: url('../images/bg-curvy-light-mode.svg');
+}
+
+.bg-curvy-dark-mode {
+  background-image: url('../images/bg-curvy-dark-mode.svg');
+}
+
+.bg-contain {
+  background-size: contain;
+}
+
+.bg-bottom {
+  background-position: bottom;
+}
+
 .bg-no-repeat {
   background-repeat: no-repeat;
 }
@@ -640,6 +656,10 @@ video {
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+
+.pb-52 {
+  padding-bottom: 13rem;
 }
 
 .text-center {
@@ -703,6 +723,10 @@ video {
   background-image: url('../images/logo-light-mode.svg');
 }
 
+:is(.dark .dark\:bg-curvy-dark-mode) {
+  background-image: url('../images/bg-curvy-dark-mode.svg');
+}
+
 :is(.dark .dark\:text-white) {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -741,5 +765,9 @@ video {
     --tw-space-x-reverse: 0;
     margin-right: calc(2.5rem * var(--tw-space-x-reverse));
     margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .md\:pt-20 {
+    padding-top: 5rem;
   }
 }
